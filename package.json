@@ -1,0 +1,28 @@
+{
+  "name": "ticketing",
+  "private": true,
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": ">=24.15.0 <25",
+    "pnpm": "10.33.2"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "check": "biome check .",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "db:generate": "pnpm --filter @ticketing/api db:generate",
+    "db:migrate": "pnpm --filter @ticketing/api db:migrate"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.9",
+    "turbo": "2.11.13",
+    "typescript": "5.9.3"
+  }
+}
