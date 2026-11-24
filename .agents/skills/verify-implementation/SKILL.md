@@ -38,7 +38,7 @@ Run additional smoke tests when necessary to verify acceptance criteria.
 - Never report a check as passed unless it was successfully executed.
 - Report missing checks and explain why any check was skipped or blocked.
 - Do not consider verification successful if required checks or acceptance criteria fail or remain unverified.
-- Do not commit, push, or modify GitHub issues.
+- Do not modify GitHub issues.
 
 ## Report Format
 
