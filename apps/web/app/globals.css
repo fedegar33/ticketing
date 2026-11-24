@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f3ee;
+  color: #192b27;
+  font-family: system-ui, sans-serif;
+}
+main {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 18vh 1.5rem;
+}
+h1 {
+  max-width: 15ch;
+  margin: 1rem 0;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+p {
+  max-width: 48ch;
+  line-height: 1.7;
+}
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
